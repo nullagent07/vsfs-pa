@@ -12,3 +12,17 @@
 /Users/sheshin/Documents/Git/vsfs-pa/obj/Debug/net7.0/vsfs-pa.pdb
 /Users/sheshin/Documents/Git/vsfs-pa/obj/Debug/net7.0/vsfs-pa.genruntimeconfig.cache
 /Users/sheshin/Documents/Git/vsfs-pa/obj/Debug/net7.0/ref/vsfs-pa.dll
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/bin/Debug/net7.0/vsfs-pa
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/bin/Debug/net7.0/vsfs-pa.deps.json
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/bin/Debug/net7.0/vsfs-pa.runtimeconfig.json
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/bin/Debug/net7.0/vsfs-pa.dll
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/bin/Debug/net7.0/vsfs-pa.pdb
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/vsfs-pa.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/vsfs-pa.AssemblyInfoInputs.cache
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/vsfs-pa.AssemblyInfo.cs
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/vsfs-pa.csproj.CoreCompileInputs.cache
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/vsfs-pa.dll
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/refint/vsfs-pa.dll
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/vsfs-pa.pdb
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/vsfs-pa.genruntimeconfig.cache
+/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/Debug/net7.0/ref/vsfs-pa.dll

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sheshin/Documents/Git/vsfs-pa/vsfs-pa.csproj": {}
+    "/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/vsfs-pa.csproj": {}
   },
   "projects": {
-    "/Users/sheshin/Documents/Git/vsfs-pa/vsfs-pa.csproj": {
+    "/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/vsfs-pa.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sheshin/Documents/Git/vsfs-pa/vsfs-pa.csproj",
+        "projectUniqueName": "/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/vsfs-pa.csproj",
         "projectName": "vsfs-pa",
-        "projectPath": "/Users/sheshin/Documents/Git/vsfs-pa/vsfs-pa.csproj",
+        "projectPath": "/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/vsfs-pa.csproj",
         "packagesPath": "/Users/sheshin/.nuget/packages/",
-        "outputPath": "/Users/sheshin/Documents/Git/vsfs-pa/obj/",
+        "outputPath": "/Users/sheshin/Desktop/vsfs-programovabi/vsfs-pa/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sheshin/.nuget/NuGet/NuGet.Config"
