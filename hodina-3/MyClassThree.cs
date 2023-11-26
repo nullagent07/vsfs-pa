@@ -47,6 +47,7 @@ namespace HodinaThree
 
         } 
         public void Priklad_3_6() {
+            Console.WriteLine("Priklad 3.6");
             Console.WriteLine("Vitejte ve hre kamen – nuzky – papir");
             Console.WriteLine("Hrajeme na dve vitezna kola");
             int hrac = 0;
@@ -77,22 +78,25 @@ namespace HodinaThree
                             
             }        
 
-            Console.WriteLine($"Celou hru vyhral {(hrac > pocitac ? "hrac" : "pocitac")}");   
+            Console.WriteLine($"Celou hru vyhral {(hrac > pocitac ? "hrac" : "pocitac")}");              
         }        
         
         public void Priklad_3_7() {
+            Console.WriteLine("Priklad 3.7");
             Data date = new Data {
                 day = 16,
                 month = 7,
                 year = 2015
             };
             Data dateAfter =  NasledneDatum(date, 500);
-            Console.WriteLine($" {dateAfter.day} {dateAfter.month} {dateAfter.year} ");
+            Console.WriteLine($"{dateAfter.day} {dateAfter.month} {dateAfter.year} ");            
         }
         // public 
         public void RunExample() {
             Priklad_3_6();
+            Console.WriteLine("");  
             Priklad_3_7();
+            Console.WriteLine("");  
         }
     }
 }

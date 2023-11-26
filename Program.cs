@@ -4,6 +4,7 @@ using System.Globalization;
 using Hodina0ne;
 using HodinaTwo;
 using HodinaThree;
+using HodinaFour;
 
 
 
@@ -11,7 +12,7 @@ class Program
 {
     static void Main() {   
 
-        RunExampleCode(3);
+        RunExampleCode(4);
 
 
         // bool status = true;
@@ -47,7 +48,8 @@ class Program
                 hodina_three.RunExample();
                 break;
             case 4 :
-            
+                MyClassFour hodina_fout = new MyClassFour();
+                hodina_fout.RunExample();
                 break;
             case 5 : 
 

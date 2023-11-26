@@ -104,9 +104,13 @@ namespace HodinaTwo
 
         public void RunExample() {
             Priklad_2_1();
+            Console.WriteLine("");  
             Priklad_2_2();
+            Console.WriteLine("");  
             Priklad_2_3();
+            Console.WriteLine("");  
             Priklad_2_5();
+            Console.WriteLine("");  
         }
     }   
 }
