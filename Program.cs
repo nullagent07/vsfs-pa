@@ -5,6 +5,7 @@ using Hodina0ne;
 using HodinaTwo;
 using HodinaThree;
 using HodinaFour;
+using HodinaFive;
 
 
 
@@ -12,7 +13,7 @@ class Program
 {
     static void Main() {   
 
-        RunExampleCode(4);
+        RunExampleCode(5);
 
 
         // bool status = true;
@@ -52,7 +53,8 @@ class Program
                 hodina_fout.RunExample();
                 break;
             case 5 : 
-
+                MyClassFive hodina_five = new MyClassFive();
+                hodina_five.RunExample();
                 break;
             case 6 :
             

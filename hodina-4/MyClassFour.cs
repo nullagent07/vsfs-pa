@@ -6,10 +6,10 @@ namespace HodinaFour
     public class MyClassFour {        
         static int PocitacCisla ( int[] arrUser) {
             var vyhry = new List<(int UhodnutoCisel, int Vyhra)> {
-                (6, 15382198),  // 6 чисел - 15 382 198 Kč
-                (5, 815723),    // 5 чисел + дополнительное число - 815 723 Kč                
-                (4, 619),       // 4 числа - 619 Kč
-                (3, 113),        // 3 числа - 113 Kč
+                (6, 15382198),  // 6 - 15 382 198 Kč
+                (5, 815723),    // 5+ - 815 723 Kč                
+                (4, 619),       // 4 - 619 Kč
+                (3, 113),        // 3 - 113 Kč
             };                
             
                 int[] arrPocitac = new int[7];
@@ -53,7 +53,6 @@ namespace HodinaFour
                 } else {
                     Console.Write("Spatne cislo her, zkuste to znovu : ");                        
                 }             
-
             } while (!isNumber);                        
 
             Console.Write("Zadejte cislo: ");
