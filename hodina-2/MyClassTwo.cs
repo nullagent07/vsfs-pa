@@ -49,18 +49,15 @@ namespace HodinaTwo
             return a;
         }
 
-        public void Priklad_2_1 () {
-            Console.WriteLine("Příklad 2.1");
+        public void Priklad_2_1 () {            
             CreateAndFillArray(2);                                  
         }
         
-        public void Priklad_2_2 () {
-            Console.WriteLine("Příklad 2.2");
+        public void Priklad_2_2 () {            
             CreateAndFillArray(3);
         }
 
-        public void Priklad_2_3 () {
-            Console.WriteLine("Příklad 2.3");
+        public void Priklad_2_3 () {            
             Console.Write("Vsechna dvojciferna cisla jsou: ");
             for(int i = 10; i < 100; i++) {
                 if( i != 99) {
@@ -71,8 +68,7 @@ namespace HodinaTwo
             }
         }
 
-        public void Priklad_2_5 () {
-            Console.WriteLine("Příklad 2.5");            
+        public void Priklad_2_5 () {                        
             while(true) {
                 Console.Write("Zadej prvni cislo: ");
                 input = Console.ReadLine();
@@ -103,14 +99,18 @@ namespace HodinaTwo
         }
 
         public void RunExample() {
+            Console.WriteLine("");
+            Console.WriteLine("Příklad 2.1");
             Priklad_2_1();
             Console.WriteLine("");  
+            Console.WriteLine("Příklad 2.2");
             Priklad_2_2();
             Console.WriteLine("");  
+            Console.WriteLine("Příklad 2.3");
             Priklad_2_3();
-            Console.WriteLine("");  
-            Priklad_2_5();
-            Console.WriteLine("");  
+            Console.WriteLine(""); 
+            Console.WriteLine("Příklad 2.5"); 
+            Priklad_2_5();            
         }
     }   
 }

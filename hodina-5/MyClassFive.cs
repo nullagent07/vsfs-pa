@@ -60,7 +60,7 @@ namespace HodinaFive
             Console.WriteLine(" ");
         }
         
-        void Priklad_5_3 () {
+        void Priklad_5_3 () {            
             int[] pole = { 5, 7, 1, 5, 6, 8, 9, 0, 1, 2};
             SelectSort(pole);
             InsertSort(pole);
@@ -69,6 +69,8 @@ namespace HodinaFive
 
         }
         public void RunExample() {
+            Console.WriteLine("");
+            Console.WriteLine("Příklad 5.3");
             Priklad_5_3();            
         }
     }

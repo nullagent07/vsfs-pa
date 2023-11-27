@@ -84,6 +84,8 @@ namespace HodinaFour
             Console.WriteLine($"Vaše výhry {zisk}");
         }
         public void RunExample() {
+            Console.WriteLine("");
+            Console.WriteLine("Příklad 4.9");
             Priklad_4_9();
         }
     }    

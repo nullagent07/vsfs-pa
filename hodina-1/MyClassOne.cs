@@ -1,6 +1,7 @@
 namespace Hodina0ne {
     public class MyClassOne {
-        public void RunExample() {            
+        public void RunExample() {       
+            Console.WriteLine("");     
             Console.WriteLine("Příklad 1.1: Specifický aritmetický výraz");  
             int a = 12, b = 5, c = 9;
             int result1 = b * c - a;
@@ -39,8 +40,7 @@ namespace Hodina0ne {
             else
             {
                 Console.WriteLine("Žádná dvě čísla netvoří součet třetího čísla.");
-            }
-            Console.WriteLine("");  
+            }            
         }
     }
 }

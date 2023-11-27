@@ -6,31 +6,25 @@ using HodinaTwo;
 using HodinaThree;
 using HodinaFour;
 using HodinaFive;
-
+using HodinaSix;
 
 
 class Program
 {
     static void Main() {   
+        bool status = true;
 
-        RunExampleCode(5);
-
-
-        // bool status = true;
-
-        // while (status) {
-        //     Console.WriteLine("Zadejte cislo nebo 'exit' :");            
-        //     string input = Console.ReadLine();
-        //     if ( input == "exit" ) {
-        //         status = false;
-        //     } else {
-        //         if ( int.TryParse( input, out int number)) {
-        //             RunExampleCode(number);
-        //         } else {
-        //             Console.WriteLine("Zadejte cislo");
-        //         }
-        //     }
-        // }        
+        while (status) {
+            Console.Write("Zadejte cislo nebo 'exit': ");            
+            string? input = Console.ReadLine();
+            if ( input == "exit" ) {
+                status = false;
+            } else {
+                if ( int.TryParse( input, out int number)) {
+                    RunExampleCode(number);
+                }
+            }
+        }        
 
     }
 
@@ -57,7 +51,8 @@ class Program
                 hodina_five.RunExample();
                 break;
             case 6 :
-            
+                MyClassSix hodina_six = new MyClassSix();
+                hodina_six.RunExample();
                 break;
             case 7 :
 
