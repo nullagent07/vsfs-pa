@@ -1,46 +1,34 @@
-using Priklad_6_3_NameSpace;
-
-namespace HodinaSix
-{
-    public class MyClassSix {        
-
+namespace Priklad_6_3_NameSpace {
+    class Priklad_6_3 {
         int LetterCount(string str) {
             HashSet<char> uniqLetter = new HashSet<char>();
-
             for (int i = 0; i < str.Length; i++) {
                 char c = str[i];
                 if (Char.IsLetter(c) && ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z')))
                     uniqLetter.Add(c);                
             }
-
             return uniqLetter.Count;
         }
 
         int Compare(string s1, string s2) {
             char[] charS1 = s1.ToCharArray();
             char[] charS2 = s2.ToCharArray();
-
             int length = Math.Min(charS1.Length, charS2.Length);
-
             for (int i = 0; i < length; i++) {
                 if(charS1[i] != charS2[i]) 
                     return charS1[i] - charS2[i];
             }
-
             return charS1.Length - charS2.Length;
         }
-
+        
         int IndexOf(string s1, string s2, int start = 0) {
             char[] charS1 = s1.ToCharArray();
             char[] charS2 = s2.ToCharArray();
-
             if(charS2.Length == 0) 
                 return start;
-
             for(int i = start; i < charS1.Length; i++) {                                
                 int j = 0;                                   
-                int saveIndex = i;                                        
-                
+                int saveIndex = i;
                 while ( charS1[saveIndex] == charS2[j] ){
                     if( j == charS2.Length - 1)
                         return i;
@@ -51,36 +39,27 @@ namespace HodinaSix
                     }
                 }
             }
-
             return -1;
         }
-
         string Insert(string s1, int index, string s2) 
         {
             if (string.IsNullOrEmpty(s2))
                 return s1;
-
             char[] charS1 = s1.ToCharArray();            
-
             char[] firstPart = new char[index];
             char[] secondPart = new char[charS1.Length - index];
-
             Array.Copy(charS1, 0, firstPart, 0, index);
             Array.Copy(charS1, index, secondPart, 0, charS1.Length - index);
-
             string resStrFirst = new string(firstPart);
             string resStrEnd = new string(secondPart);
-            string resStrAdd = new string(s2);
-            
+            string resStrAdd = new string(s2);            
             return $"{resStrFirst}{resStrAdd}{resStrEnd}";            
         }
-
-        void Priklad_6_3() {            
+        public void Run () {
             Console.WriteLine("Příklad 6.1 ");
             int _6_1 = LetterCount("привет мое имя John ");
             Console.WriteLine(_6_1);
             Console.WriteLine("");
-
             Console.WriteLine("Příklad 6.3 (a)");
             string str1 = "hello";
             string str2 = "hello";
@@ -108,17 +87,7 @@ namespace HodinaSix
             string str10 = "0x6edfdd ";            
 
             string _6_3_d_1 = Insert(str9, 6, str10);
-            Console.WriteLine(_6_3_d_1);                        
-
-        }
-
-        public void RunExample () {
-            // Console.WriteLine("");            
-            // Priklad_6_3();
-
-
-            Priklad_6_3 priklad_6_3 = new Priklad_6_3();
-            priklad_6_3.Run();
+            Console.WriteLine(_6_3_d_1);   
         }
     }
 }

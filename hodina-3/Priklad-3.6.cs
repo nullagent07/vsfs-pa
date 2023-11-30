@@ -1,20 +1,9 @@
-using System;
-using Priklad_3_6_NameSpace;
-using Priklad_3_7_NameSpace;
-
-namespace HodinaThree 
-{
-    public class MyClassThree {
+namespace Priklad_3_6_NameSpace {
+    class Priklad_3_6 {
         enum Volba { Kamen = 1, Nuzky, Papir };
-        struct Data {
-            public int day;
-            public int month;
-            public int year;
-
-        }
-
         static Volba? GetVolbaEnum ( object name ) {
-            if( name is string ) {
+            if( name is string ) 
+            {
                 switch ( name ) {
                     case "kamen":
                         return Volba.Kamen;  
@@ -27,7 +16,8 @@ namespace HodinaThree
                 }            
             }   
 
-            if( name is int) {
+            if( name is int) 
+            {
                 switch ( name ) {
                     case 1:
                         return Volba.Kamen;  
@@ -40,23 +30,15 @@ namespace HodinaThree
 
             Console.WriteLine("Tento tah je neplatny");
             return null;   
-        }
-
-        static Data NasledneDatum ( Data data, int daysAfter) {
-            DateTime start = new DateTime(data.year, data.month, data.day);
-            DateTime end = start.AddDays(daysAfter);
-
-            return new Data { day = end.Day, month = end.Month, year = end.Year};
-
-        } 
-        public void Priklad_3_6() {
-            Console.WriteLine("Priklad 3.6");
+        }        
+        public void Run() {            
             Console.WriteLine("Vitejte ve hre kamen – nuzky – papir");
             Console.WriteLine("Hrajeme na dve vitezna kola");
             int hrac = 0;
             int pocitac = 0;
 
-            while (hrac < 2 && pocitac < 2) {                    
+            while (hrac < 2 && pocitac < 2) 
+            {                    
                 Console.Write("Zadejte svuj tah: ");
 
                 string? input = Console.ReadLine().ToLower();
@@ -77,31 +59,10 @@ namespace HodinaThree
                         pocitac++;
 
                     Console.WriteLine($"Hrac zahral {a}, pocitac zahral {b}");
-                    Console.WriteLine($"Celkove skore: hrac {hrac}  – pocitac {pocitac}");
-                            
+                    Console.WriteLine($"Celkove skore: hrac {hrac}  – pocitac {pocitac}");       
             }        
 
-            Console.WriteLine($"Celou hru vyhral {(hrac > pocitac ? "hrac" : "pocitac")}"); 
-            Console.WriteLine("");  
-        }        
-        
-        public void Priklad_3_7() {
-            Console.WriteLine("Priklad 3.7");
-            Data date = new Data {
-                day = 16,
-                month = 7,
-                year = 2015
-            };
-            Data dateAfter =  NasledneDatum(date, 500);
-            Console.WriteLine($"{dateAfter.day} {dateAfter.month} {dateAfter.year} ");
-            Console.WriteLine("");  
-        }        
-        public void RunExample() {            
-            Priklad_3_6 priklad_3_6 = new Priklad_3_6();
-            priklad_3_6.Run();
-
-            Priklad_3_7 priklad_3_7 = new Priklad_3_7();
-            priklad_3_7.Run();
-        }
+            Console.WriteLine($"Celou hru vyhral {(hrac > pocitac ? "hrac" : "pocitac")}");  
+        }   
     }
 }
